@@ -2,8 +2,6 @@
 
 context("Tidy dataframe for books")
 
-suppressPackageStartupMessages(library(dplyr))
-
 test_that("factor order is correct", {
         d <- austen_books()
         expect_equal(levels(d$book)[1], "Sense & Sensibility")
@@ -11,14 +9,11 @@ test_that("factor order is correct", {
 })
 
 test_that("tidy frame for Austen books is right", {
-        d <- austen_books() %>% 
-                group_by(book) %>%
-                summarise(total_lines = n())
-        expect_equal(nrow(d), 6)
-        expect_equal(ncol(d), 2)
+        lines_by_book <- table(austen_books()$book)
+        expect_length(lines_by_book, 6L)
         # the factor levels still in the right order?
-        expect_equal(as.character(d$book[1]), "Sense & Sensibility")
-        expect_equal(as.character(d$book[6]), "Persuasion")
+        expect_equal(names(lines_by_book)[1L], "Sense & Sensibility")
+        expect_equal(names(lines_by_book)[6L], "Persuasion")
         # Persuasion has fewer lines than Emma?
-        expect_lt(d$total_lines[6], d$total_lines[4])
+        expect_lt(lines_by_book[[6L]], lines_by_book[[4L]])
 })
