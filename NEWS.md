@@ -1,3 +1,5 @@
+# janeaustenr (development version)
+
 # janeaustenr 1.0.0
 
 * Use suggested packages more strictly
