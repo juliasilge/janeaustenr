@@ -1,12 +1,3 @@
-#' Jane Austen's Complete Novels
-#' 
-#' This package contains the complete text of Jane Austen's 6 completed, 
-#' published novels, formatted to be convenient for text analysis.
-#' @docType package
-#' @name janeaustenr
-#' @aliases janeaustenr janeaustenr-package
-NULL
-
 #' The text of Jane Austen's novel "Sense and Sensibility"
 #'
 #' A dataset containing the text of Jane Austen's 1811 novel "Sense and 
