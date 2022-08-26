@@ -16,10 +16,8 @@
 #' 
 #' @examples 
 #' 
-#' library(dplyr)
-#'
-#' austen_books() %>% group_by(book) %>%
-#'      summarise(total_lines = n())
+#' lines_by_book <- table(austen_books()$book)
+#' lines_by_book
 #'
 #' @export
 austen_books <- function(){
