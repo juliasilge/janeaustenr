@@ -1,21 +1,34 @@
 # tests for austen_books function
 
+all_books_in_order <- c(
+  "Sense & Sensibility",
+  "Pride & Prejudice",
+  "Mansfield Park",
+  "Emma",
+  "Northanger Abbey",
+  "Persuasion"
+)
+
 test_that("factor order is correct", {
-  d <- austen_books()
-  expect_identical(levels(d$book)[1], "Sense & Sensibility")
-  expect_identical(levels(d$book)[6], "Persuasion")
+  book_lines <- austen_books()
+  expect_identical(levels(book_lines$book), all_books_in_order)
 })
 
 test_that("tidy frame for Austen books is right", {
   skip_if_not_installed("dplyr")
-  d <- austen_books() %>% 
+  lines_by_book <- austen_books() %>% 
     dplyr::group_by(book) %>%
     dplyr::summarise(total_lines = dplyr::n())
-  expect_identical(nrow(d), 6L)
-  expect_identical(ncol(d), 2L)
+  expect_identical(nrow(lines_by_book), 6L)
+  expect_identical(ncol(lines_by_book), 2L)
   # the factor levels still in the right order?
-  expect_identical(as.character(d$book[1]), "Sense & Sensibility")
-  expect_identical(as.character(d$book[6]), "Persuasion")
+  expect_identical(
+    as.character(lines_by_book$book),
+    all_books_in_order
+  )
   # Persuasion has fewer lines than Emma?
-  expect_lt(d$total_lines[6], d$total_lines[4])
+  expect_lt(
+    lines_by_book$total_lines[[6]],
+    lines_by_book$total_lines[[4]]
+  )
 })
