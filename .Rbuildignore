@@ -6,3 +6,4 @@
 ^data-raw$
 ^revdep$
 ^\.github$
+^CRAN-SUBMISSION$
