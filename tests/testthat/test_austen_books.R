@@ -9,8 +9,8 @@ test_that("factor order is correct", {
 test_that("tidy frame for Austen books is right", {
   skip_if_not_installed("dplyr")
   d <- austen_books() %>% 
-    group_by(book) %>%
-    summarise(total_lines = n())
+    dplyr::group_by(book) %>%
+    dplyr::summarise(total_lines = dplyr::n())
   expect_identical(nrow(d), 6L)
   expect_identical(ncol(d), 2L)
   # the factor levels still in the right order?
