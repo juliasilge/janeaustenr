@@ -14,12 +14,13 @@
 #' 
 #' @name austen_books
 #' 
-#' @examples 
+#' @examplesIf requireNamespace("dplyr", quietly = TRUE)
 #' 
 #' library(dplyr)
 #'
-#' austen_books() %>% group_by(book) %>%
-#'      summarise(total_lines = n())
+#' austen_books() %>% 
+#'     group_by(book) %>%
+#'     summarise(total_lines = n())
 #'
 #' @export
 austen_books <- function(){

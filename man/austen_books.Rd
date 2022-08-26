@@ -22,10 +22,12 @@ between the novels as made available by Project Gutenberg. For example,
 caps to indicate italics/emphasis.
 }
 \examples{
+\dontshow{if (requireNamespace("dplyr", quietly = TRUE)) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
 
 library(dplyr)
 
-austen_books() \%>\% group_by(book) \%>\%
-     summarise(total_lines = n())
-
+austen_books() \%>\% 
+    group_by(book) \%>\%
+    summarise(total_lines = n())
+\dontshow{\}) # examplesIf}
 }
