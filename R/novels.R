@@ -1,12 +1,3 @@
-#' Jane Austen's Complete Novels
-#' 
-#' This package contains the complete text of Jane Austen's 6 completed, 
-#' published novels, formatted to be convenient for text analysis.
-#' @docType package
-#' @name janeaustenr
-#' @aliases janeaustenr janeaustenr-package
-NULL
-
 #' The text of Jane Austen's novel "Sense and Sensibility"
 #'
 #' A dataset containing the text of Jane Austen's 1811 novel "Sense and 
@@ -14,7 +5,7 @@ NULL
 #' and is divided into elements of up to about 70 characters each.
 #' (Some elements are blank.)
 #'
-#' @source \url{http://www.gutenberg.org/ebooks/161}
+#' @source <http://www.gutenberg.org/ebooks/161>
 #' @format A character vector with 12262 elements
 "sensesensibility"
 
@@ -25,7 +16,7 @@ NULL
 #' and is divided into elements of up to about 70 characters each.
 #' (Some elements are blank.)
 #'
-#' @source \url{http://www.gutenberg.org/ebooks/1342}
+#' @source <http://www.gutenberg.org/ebooks/1342>
 #' @format A character vector with 12447 elements
 "prideprejudice"
 
@@ -36,7 +27,7 @@ NULL
 #' and is divided into elements of up to about 70 characters each.
 #' (Some elements are blank.)
 #'
-#' @source \url{http://www.gutenberg.org/ebooks/141}
+#' @source <http://www.gutenberg.org/ebooks/141>
 #' @format A character vector with 14768 elements
 "mansfieldpark"
 
@@ -47,7 +38,7 @@ NULL
 #' and is divided into elements of up to about 70 characters each. 
 #' (Some elements are blank.)
 #'
-#' @source \url{http://www.gutenberg.org/ebooks/158}
+#' @source <http://www.gutenberg.org/ebooks/158>
 #' @format A character vector with 15297 elements
 "emma"
 
@@ -59,7 +50,7 @@ NULL
 #' and is divided into elements of up to about 70 characters each.
 #' (Some elements are blank.)
 #'
-#' @source \url{http://www.gutenberg.org/ebooks/121}
+#' @source <http://www.gutenberg.org/ebooks/121>
 #' @format A character vector with 7840 elements
 "northangerabbey"
 
@@ -71,6 +62,6 @@ NULL
 #' and is divided into elements of up to about 70 characters each.
 #' (Some elements are blank.)
 #'
-#' @source \url{http://www.gutenberg.org/ebooks/105}
+#' @source <http://www.gutenberg.org/ebooks/105>
 #' @format A character vector with 8328 elements
 "persuasion"

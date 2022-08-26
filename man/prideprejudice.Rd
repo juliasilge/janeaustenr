@@ -4,7 +4,9 @@
 \name{prideprejudice}
 \alias{prideprejudice}
 \title{The text of Jane Austen's novel "Pride and Prejudice"}
-\format{A character vector with 12447 elements}
+\format{
+A character vector with 12447 elements
+}
 \source{
 \url{http://www.gutenberg.org/ebooks/1342}
 }
@@ -12,7 +14,7 @@
 prideprejudice
 }
 \description{
-A dataset containing the text of Jane Austen's 1813 novel "Pride and 
+A dataset containing the text of Jane Austen's 1813 novel "Pride and
 Prejudice". The UTF-8 plain text was sourced from Project Gutenberg
 and is divided into elements of up to about 70 characters each.
 (Some elements are blank.)

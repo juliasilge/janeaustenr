@@ -1,9 +1,11 @@
 
 # janeaustenr <img src="tools/logo.png" align="right"/>
 
+<!-- badges: start -->
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/janeaustenr)](https://cran.r-project.org/package=janeaustenr)
-[![Build Status](https://travis-ci.org/juliasilge/janeaustenr.svg?branch=master)](https://travis-ci.org/juliasilge/janeaustenr)
+[![R-CMD-check](https://github.com/juliasilge/janeaustenr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/juliasilge/janeaustenr/actions/workflows/R-CMD-check.yaml)
 [![DOI](https://zenodo.org/badge/22224/juliasilge/janeaustenr.svg)](https://zenodo.org/badge/latestdoi/22224/juliasilge/janeaustenr)
+<!-- badges: end -->
 
 ## An R Package for Jane Austen's Complete Novels
 
@@ -27,23 +29,24 @@ Users should be aware that there are some differences in usage between the novel
 
 ## Installation
 
-To install the package type the following:
+You can install the released version of janeaustenr from
+[CRAN](https://CRAN.R-project.org) with:
 
-```
+```r
 install.packages("janeaustenr")
-library(janeaustenr)
 ```
 
-Or you can install the development version from Github:
+And the development version from [GitHub](https://github.com/) with:
 
-```
-library(devtools)
-install_github("juliasilge/janeaustenr")
-library(janeaustenr)
+``` r
+# install.packages("devtools")
+devtools::install_github("juliasilge/janeaustenr")
 ```
 
 ## How to Use This Package
 
 For some ideas on getting started with analyzing these texts, see my [blog post on sentiment analysis of Austen's novels](https://juliasilge.com/blog/if-i-loved-nlp-less/). For help within R, try `?persuasion` or similar for getting started with the data sets.
 
-This project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+This project is released with a [Contributor Code of
+Conduct](https://www.contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.

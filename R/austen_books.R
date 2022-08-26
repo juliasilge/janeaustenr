@@ -1,8 +1,8 @@
 #' Tidy data frame of Jane Austen's 6 completed, published novels
 #' 
 #' Returns a tidy data frame of Jane Austen's 6 completed, published novels with 
-#' two columns: \code{text}, which contains the text of the novels divided into 
-#' elements of up to about 70 characters each, and \code{book}, which contains the titles of
+#' two columns: `text`, which contains the text of the novels divided into 
+#' elements of up to about 70 characters each, and `book`, which contains the titles of
 #' the novels as a factor in order of publication.
 #' 
 #' @details Users should be aware that there are some differences in usage 
@@ -10,16 +10,17 @@
 #' "anything" vs. "any thing", "Mr" vs. "Mr.", and using underscores vs. all 
 #' caps to indicate italics/emphasis.
 #' 
-#' @return A data frame with two columns: \code{text} and \code{book}
+#' @return A data frame with two columns: `text` and `book`
 #' 
 #' @name austen_books
 #' 
-#' @examples 
+#' @examplesIf requireNamespace("dplyr", quietly = TRUE)
 #' 
 #' library(dplyr)
 #'
-#' austen_books() %>% group_by(book) %>%
-#'      summarise(total_lines = n())
+#' austen_books() %>% 
+#'     group_by(book) %>%
+#'     summarise(total_lines = n())
 #'
 #' @export
 austen_books <- function(){

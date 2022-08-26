@@ -4,7 +4,9 @@
 \name{sensesensibility}
 \alias{sensesensibility}
 \title{The text of Jane Austen's novel "Sense and Sensibility"}
-\format{A character vector with 12262 elements}
+\format{
+A character vector with 12262 elements
+}
 \source{
 \url{http://www.gutenberg.org/ebooks/161}
 }
@@ -12,7 +14,7 @@
 sensesensibility
 }
 \description{
-A dataset containing the text of Jane Austen's 1811 novel "Sense and 
+A dataset containing the text of Jane Austen's 1811 novel "Sense and
 Sensibility". The UTF-8 plain text was sourced from Project Gutenberg
 and is divided into elements of up to about 70 characters each.
 (Some elements are blank.)

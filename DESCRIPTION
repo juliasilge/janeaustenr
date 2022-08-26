@@ -1,17 +1,23 @@
 Package: janeaustenr
 Title: Jane Austen's Complete Novels
 Version: 0.1.5
-Authors@R: person("Julia", "Silge", email = "julia.silge@gmail.com", role = c("aut", "cre"))
-Description: Full texts for Jane Austen's 6 completed novels, ready for text
-    analysis. These novels are "Sense and Sensibility", "Pride and Prejudice",
-    "Mansfield Park", "Emma", "Northanger Abbey", and "Persuasion".
+Authors@R: 
+    person("Julia", "Silge", , "julia.silge@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-3671-836X"))
+Description: Full texts for Jane Austen's 6 completed novels, ready for
+    text analysis. These novels are "Sense and Sensibility", "Pride and
+    Prejudice", "Mansfield Park", "Emma", "Northanger Abbey", and
+    "Persuasion".
+License: MIT + file LICENSE
 URL: https://github.com/juliasilge/janeaustenr
 BugReports: https://github.com/juliasilge/janeaustenr/issues
-Depends: R (>= 3.1.2)
-Suggests: dplyr,
+Depends: 
+    R (>= 3.5)
+Suggests: 
+    dplyr,
     testthat
 Config/testthat/edition: 3
-License: MIT + file LICENSE
-LazyData: true
-RoxygenNote: 6.0.1
 Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1

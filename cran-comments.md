@@ -2,12 +2,6 @@
 
 This is the sixth CRAN release of janeaustenr; it fixes an encoding issue for some of the text and a namespace issue.
 
-## Test environments
-
-* Local OS X install: R 3.4.0
-* Ubuntu 12.04 (on Travis-CI): R 3.4.0
-* Win-builder: R-devel and R-release
-
 ## R CMD check results
 
 0 errors | 0 warnings | 0 notes
