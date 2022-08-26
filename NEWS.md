@@ -1,3 +1,7 @@
+# janeaustenr 1.0.0
+
+* Use suggested packages more strictly
+
 # janeaustenr 0.1.5
 
 * Fixed encoding for *Mansfield Park*
