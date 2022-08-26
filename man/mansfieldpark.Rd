@@ -4,7 +4,9 @@
 \name{mansfieldpark}
 \alias{mansfieldpark}
 \title{The text of Jane Austen's novel "Mansfield Park"}
-\format{A character vector with 14768 elements}
+\format{
+A character vector with 14768 elements
+}
 \source{
 \url{http://www.gutenberg.org/ebooks/141}
 }

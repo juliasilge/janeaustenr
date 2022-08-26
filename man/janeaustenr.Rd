@@ -4,9 +4,8 @@
 \name{janeaustenr}
 \alias{janeaustenr}
 \alias{janeaustenr-package}
-\alias{janeaustenr-package}
 \title{Jane Austen's Complete Novels}
 \description{
-This package contains the complete text of Jane Austen's 6 completed, 
+This package contains the complete text of Jane Austen's 6 completed,
 published novels, formatted to be convenient for text analysis.
 }

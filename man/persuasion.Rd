@@ -4,7 +4,9 @@
 \name{persuasion}
 \alias{persuasion}
 \title{The text of Jane Austen's novel "Persuasion"}
-\format{A character vector with 8328 elements}
+\format{
+A character vector with 8328 elements
+}
 \source{
 \url{http://www.gutenberg.org/ebooks/105}
 }
@@ -12,7 +14,7 @@
 persuasion
 }
 \description{
-A dataset containing the text of Jane Austen's novel "Persuasion", 
+A dataset containing the text of Jane Austen's novel "Persuasion",
 published posthumously in 1818.
 The UTF-8 plain text was sourced from Project Gutenberg
 and is divided into elements of up to about 70 characters each.
